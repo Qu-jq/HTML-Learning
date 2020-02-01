@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单2</title>
+</head>
+<body>
+<form>
+    <!--按钮学习-->
+    <input type="button" value="按钮">
+    <br><br>
+    <button>button</button><!--与js合作作为绑定事件-->
+    <br>
+    button要比input button的功能多,可以当作任何按钮来使用，适用范围更广泛
+    <br>
+    <input type="submit" value="提交"><!--提交表单-->
+    <br>
+    input submit用于提交表单时，必须声明form里面的mothod属性，最好也添加action属性（设计PHP）
+    <br><br>
+    <!--滑动条-->
+    <input type="range" max="200" min="-100" value="0"><!--范围-100~200，默认值0-->
+    <br><br>
+    <!--数目-->
+    <input type="number" max="100" min="-10" value="50">
+    <br><br>
+    <!--选框-->
+    <input type="checkbox" >记住我
+    <br><br>
+    选择后不能取消
+    <input type="radio">选择
+    <br><br>
+    <!--选择题-->
+    你最喜欢的水果是(单选)？
+    <br>
+    <input type="radio" name="a" checked>苹果<!--checked默认选择苹果-->
+    <input type="radio" name="a">香蕉
+    <input type="radio" name="a">西瓜
+    <br><br>
+
+    你最喜欢的水果是什么？
+    <br>
+    <select>
+        <option>苹果</option>
+        <option>香蕉</option>
+        <option>西瓜</option>
+    </select>
+    <br>
+    只有三个选项，如果还有喜欢其他的呢？
+    <br><br>
+    你最喜欢的水果是什么？
+    <br>
+    <input type="text" list="datalist1">
+    <datalist id="datalist1">
+        <option>苹果</option>
+        <option>香蕉</option>
+        <option>西瓜</option>
+    </datalist>
+datalist必须与input text一起使用
+</form>
+</body>
+</html>

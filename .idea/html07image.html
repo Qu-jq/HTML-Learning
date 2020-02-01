@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌入图片与创建分区响应图</title>
+</head>
+<body>
+<!--嵌入图片-->
+<img src="download.jpg" width="128"><!--自适应，高度随宽度而变化-->
+<img src="download2.jpg" width="128" alt="下载"><!--图像显示不出来时，会显示alt的值-->
+<br>
+<!--创建图片链接-->
+<a href="index.html" target="_blank">
+    <img src="download.jpg" width="128">
+</a>
+<br>
+这里有一个问题就是点击图片边缘的空白区域也会跳转链接，因此就需要考虑使用分区响应
+<br><br>
+<form>
+    <input type="image" src="download.jpg" height="125">
+</form>
+<img src="download.jpg" width="128" usemap="#map1">
+<map name="map1">
+    <area href="index.html" shape="circle" coords="64px,64px,64px" target="_blank">
+    <!--coords中的值分为别左边缘到圆心的距离，右边缘到圆心的距离，半径-->
+</map>
+
+</body>
+</html>

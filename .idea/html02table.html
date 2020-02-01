@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格元素</title>
+</head>
+<body>
+<table border="1px"><!--border设置边框宽度，还有居中之类的设置，现在使用很少啦，都在CSS中使用-->
+    <thead><!--表头：现在还看不出作用，用CSS时有用-->
+    <tr>
+        <th>姓名</th><!--这里的th标签可以与td区分开，是属性，表头使用，具有加粗居中显示的作用-->
+        <th>年龄</th>
+        <th>密码</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>小渠</td>
+        <td>18</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>小花</td>
+        <td>17</td>
+        <td>345</td>
+    </tr>
+    </tbody>
+    <tfoot><!--表尾-->
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>密码</td>
+    </tr>
+    </tfoot>
+</table>
+<br>
+<!--表中单元格的合并-->
+<table border="1px">
+    <tr>
+        <th rowspan="2">你好啊</th><!--列合并，合并两个单元格-->
+        <th>你好啊</th>
+        <th>你好啊</th>
+        <th>你好啊</th>
+    </tr>
+    <tr>
+
+        <td colspan="2">你好啊</td><!--行合并，合并两个单元格-->
+        <td>你好啊</td>
+    </tr>
+    <tr>
+        <td>你好啊</td>
+        <td>你好啊</td>
+        <td>你好啊</td>
+        <td>你好啊</td>
+    </tr>
+</table>
+
+</body>
+</html>
