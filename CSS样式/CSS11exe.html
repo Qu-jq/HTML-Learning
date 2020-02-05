@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style type="text/css">
+        .div{
+            text-align: center;
+        }
+        .img{
+            margin-top: 140px;
+            width: 400px;
+            height: 400px;
+        }
+        html:hover .img{
+            /*使用动画方式*/
+           animation-name: image;
+            animation-duration: 1s;
+            animation-delay: 500ms;
+            animation-fill-mode: forwards;/*停止在最后一针，不会回去*/
+        }
+        @keyframes image {
+            to{
+                margin-top: 0px;
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
+        p{
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-shadow: 2px 2px 2px #f4ffea;
+            opacity: 1;/*透明度*/
+        }
+        html:hover p{
+            /*使用过度*/
+            transition-duration: 1s;
+            transition-delay: 500ms;
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-shadow: 2px 2px 2px #f4ffea;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="div">
+    <img src="download.jpg" class="img"></img>
+    <p>下载</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度动画</title>
+    <style type="text/css">
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: #56ccff;
+        }
+        p:hover{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            /*transition-delay: 1s;*//*延时变化*/
+            transition-duration: 1s;/*缓慢变化时间*/
+            /*transition-property: height;*//*设置突然变化的属性，不缓慢变化*/
+            transition-timing-function: ease-in;/*一开始慢，后来快*/
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>
