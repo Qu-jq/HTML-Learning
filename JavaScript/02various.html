@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+    <script>
+        var various = "这是一个变量";
+        //变量名称：大小写字母 % _ 数字，数字不能放在开头
+        //变量名称尽量避免和函数库名称相同
+        alert(various);
+        document.write(various+"可以拼接");/*写在网页的开始部分*/
+        /*数字变量*/
+        var number = 100;
+        number = number +100;
+        document.write(number);
+
+        /*数字变量*/
+        var number2 = 100;
+        number2 = number2 +"200";/*不像java这么规范*/
+        document.write("<br>"+number2);/*换行输出100200*/
+        document.write("<br>"+"<h1>"+number2+"</h1>")
+
+        /*用户端输入字符*/
+        var info = prompt("请输入您的信息:","");
+        document.write(info);
+    </script>
+</head>
+<body>
+<p>
+    变量名称：大小写字母 % _ 数字，数字不能放在开头<br>
+    变量名称尽量避免和函数库名称相同
+</p>
+</body>
+</html>

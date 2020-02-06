@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while语句</title>
+    <script>
+        var pwd1 = prompt("请输入密码：","");
+        while(pwd1 !== "123456"){/*注意这里不等于是 ！== */
+            pwd1 = prompt("密码错误请重新输入：","");
+        }
+        if(pwd1 == "123456"){
+            document.write("登录成功！");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
